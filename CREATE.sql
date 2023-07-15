@@ -11,7 +11,7 @@ name         VARCHAR(60) not null
 create table if not exists performers_genres (
 id            SERIAL  PRIMARY KEY,
 performer_id  INTEGER references performers(performer_id),
-genre_id      INTEGER references music_Ganres(genre_id)
+genre_id      INTEGER references music_genres(genre_id)
 );
 
 create table if not exists albums (
