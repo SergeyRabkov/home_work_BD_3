@@ -6,7 +6,7 @@ VALUES ('Ren'),
        ('Thirty Seconds to Mars'),
        ('A');
 
-INSERT INTO music_ganres (name) 
+INSERT INTO music_genres (name) 
 VALUES ('Rap'),
        ('Pop'),
        ('Rock'),
@@ -24,11 +24,11 @@ VALUES (1, 1),
        (5, 3);
 
 INSERT INTO albums (title, release_year) 
-VALUES ('Freckled Angels', '2016-01-01 01:01:01.00000'),
-       ('Sgt. Pepper’s Lonely Hearts Club Band', '1967-05-26 01:01:01.00000'),
-       ('505', '2021-04-05 01:01:01.00000'),
-       ('Trench', '2016-01-01 01:01:01.00000'),
-       ('America', '2018-01-01 01:01:01.00000');
+VALUES ('Freckled Angels', '2016-01-01'),
+       ('Sgt. Pepper’s Lonely Hearts Club Band', '1967-05-26'),
+       ('505', '2021-04-05'),
+       ('Trench', '2016-01-01'),
+       ('America', '2018-01-01');
 
 INSERT INTO performers_albums (performer_id, album_id) 
 VALUES (1, 1),
@@ -47,13 +47,19 @@ VALUES (1, 'make my way', 216),
        (4, 'My Blood', 229),
        (4, 'Cut My Lip', 283),
        (5, 'Rescue Me', 218),
-       (5, 'Love Is Madness', 236);
+       (5, 'Love Is Madness', 236),
+       (5, 'my own', 236),
+       (5, 'own my', 236),
+       (5, 'my', 236),
+       (5, 'myself', 236),
+       (5, 'by myself', 236),
+       (5, 'by myself by', 236);
 
 INSERT INTO compilations (title, release_year) 
-VALUES ('Greatest Hits', '1992-01-01 01:01:01.00000'),
-       ('All-Time Greatest Hits', '2018-01-01 01:01:01.00000'),
-       ('Rock Greatest Hits', '2019-01-01 01:01:01.00000'),
-       ('Synthpop Greatest Hits', '2020-01-01 01:01:01.00000');
+VALUES ('Greatest Hits', '1992-01-01'),
+       ('All-Time Greatest Hits', '2018-01-01'),
+       ('Rock Greatest Hits', '2019-01-01'),
+       ('Synthpop Greatest Hits', '2020-01-01');
 
 INSERT INTO compilations_tracks (compilation_id, track_id) 
 VALUES (1, 3),
